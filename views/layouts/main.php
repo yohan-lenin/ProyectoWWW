@@ -29,7 +29,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => 'Petroleos S.S',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -39,7 +39,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Compras', 'url' => ['/site/about']],
+            ['label' => 'suministro', 'url' => ['/site/suministro']],
             ['label' => 'Ventas', 'url' => ['/site/contact']],
             ['label' => 'Estadisticas', 'url' => ['/site/estadisticas']],
             Yii::$app->user->isGuest ? (

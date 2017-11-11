@@ -5,6 +5,11 @@ body {
 #col-lg-4{
     border-width: 2px;
 }
+
+h3{
+    text-align: center;
+}
+
 .wrap {
     min-height: 100%;
     height: auto;

@@ -3,11 +3,12 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
+use web\css\site;
 
-$this->title = 'Productos';
+$this->title = 'Suministro';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-about">
+<div class="site-suministro">
     <h1 align="center"><?= Html::encode($this->title) ?></h1>
 
     <div class="form-group">
@@ -21,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
 						  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 						</button>
 					
-						<label for="nombre" class="col-lg-2 control-label">Nombre</label>
+						<label for="nombre" class="col-lg-2 control-label ">Nombre</label>
 						<div class="col-lg-3">
 							<input type="text" class="form-control" id="nombre" placeholder="Nombre del producto" name="nombre">
 						</div>
@@ -33,13 +34,14 @@ $this->params['breadcrumbs'][] = $this->title;
 					      <input type="text" class="form-control" id="cantidad" placeholder="cantidad" name="email">
 					  </div>
 
-				    </div>
+				  
 					
 					
 						<label for="precio" class="col-lg-2 control-label">Precio de compra</label>
 						<div class="col-lg-3">
 							<input type="text" class="form-control" id="precio" placeholder="0000.00" name="precio">
 						</div>
+					  </div>
 
 				
 					<br><br>
@@ -52,34 +54,43 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 					<br><br><br>
 
-			<div id ="contenedor">
+					<hr/>
 
 					<h1 align="center"> Proveedor </h1>
-					
-						<label for="nombre" class="col-lg-2 control-label">Nombre</label>
-                            <div class="col-xs-3" >
-						   <div class="left-inner-addon">
-						        <i class="icon-user"></i>
-						        <input type="text"
-						               class="form-control" 
-						               placeholder="Nombre del proveedor" />
-						    </div>
-						</div>
-                    
+					<br>
 
+
+	
 
 					<div class="form-group">
 						<label for="nombre" class="col-lg-1 control-label">Id</label>
                             <div class="col-lg-3">
                                 <input id="fname" name="name" type="text" placeholder="Id del proveedor" class="form-control">
                             </div>
-                    </div>
+                    
+                   
 
-            </div>
-			<div class=" center-block">
-				<button type="submit" class="btn btn-primary btn-lg" id="btn1">Añadir producto</span>
+                    <label for="nombre" class="col-lg-2 control-label" id="nombreP">Nombre</label>
+                        
+						   <div class="left-inner-addon col-xs-3">
+						        <i class="icon-user"></i>
+						        <input type="text"
+						               class="form-control" 
+						               placeholder="Nombre del proveedor" />
+						    </div>
+					
+
+					</div>
+
+				
+
+           
+            <br><br>
+
+            <div class="form group">
+				<?php echo Html::submitButton("Añadir Producto", ["class" => "btn btn-primary  btn-lg center-block"]) ?>
+
 			</div>
-			<br><br>
 		<hr/>
 
 

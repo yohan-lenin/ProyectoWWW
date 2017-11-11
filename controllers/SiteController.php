@@ -17,6 +17,7 @@ class SiteController extends Controller
      */
     public function behaviors()
     {
+        
         return [
             'access' => [
                 'class' => AccessControl::className(),
@@ -71,6 +72,8 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        
+
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -109,7 +112,7 @@ class SiteController extends Controller
 
             return $this->refresh();
         }
-        return $this->render('contact', [
+        return $this->render('Ventas', [
             'model' => $model,
         ]);
     }
@@ -119,8 +122,14 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
+    public function actionSuministro()
     {
-        return $this->render('about');
+        return $this->render('suministro');
+    }
+
+    public function actionEstadisticas(){
+
+        return $this->render('estadisticas');
+
     }
 }
